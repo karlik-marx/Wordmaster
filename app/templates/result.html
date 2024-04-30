@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результат обработки</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <section class="section">
+        <h1 class="title is-fullwidth is-center mb-6">WordMaster</h1>
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="field">
+                        <label class="label">Исходный текст</label>
+                        <div class="control">
+                            <textarea class="textarea" readonly rows="20">{{ original_text }}</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="field">
+                        <label class="label">Обработанный текст</label>
+                        <div class="control">
+                            <textarea class="textarea" readonly rows="20">{{ processed_text }}</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons mt-4">
+                <a href="/" class="button is-info"><i class="fas fa-arrow-left mr-2"></i>Назад</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
